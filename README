@@ -1,3 +1,11 @@
+Slightly modified from pytesser: 
+  1. Got this to work on OSX 10.8.5 with Python 2.7 by downloading tesseract using brew 
+  brew install tesseract
+  2. Updated l 13 in pytesser.py to
+  tesseract_exe_name = '/usr/local/Cellar/tesseract/3.02.02/bin/tesseract' # or wherever your own tesseract bin is
+  
+TODO: Take image -> rectify orientation -> ocr -> spell correction -> get text -> put into google calendar
+
 Introduction:
 ============
 PyTesser is an Optical Character Recognition module for Python. It takes 
